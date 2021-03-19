@@ -1,0 +1,26 @@
+<div class="containerform">
+    <div class="screen">
+        <div class="screen-header">
+           <div class="titlesp"> ADD CLUB</div>
+        </div>
+        <div class="screen-body">
+            <div class="formdiv">
+                <div class="app-form-group">
+                    <label for="clubName"> CLUB NAME <span class="star">*</span> </label>
+                    <input oninput="this.value = this.value.toUpperCase()" required type="text" [(ngModel)]="footballclub.clubName" name="clubName" id="clubName"
+                            class="app-form-control" maxlength="50" placeholder="Enter Club Name" />
+                </div>
+                <div class="app-form-group">
+                    <label for="location">LOCATION <span class="star">*</span></label>
+                    <input oninput="this.value = this.value.toUpperCase()" required type="text" [(ngModel)]="footballclub.location" name="location" id="location"
+                            class="app-form-control" maxlength="50" placeholder="Enter Location" />
+                </div>
+                <div class="buttons">
+                    <div class="msg"><span>{{message}}</span></div>
+                    <div class="sub"><input class="app-form-button" type="submit" name="submit_reg" value="ADD CLUB" (click)="addClub()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="msg2"><span>{{message2}}</span></div>
+</div>

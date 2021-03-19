@@ -1,0 +1,33 @@
+<div class="tablediv">
+  <div class="topic">WINS TABLE</div>
+  <table>
+  <thead>
+      <tr>
+          <th>CLUB NAME</th>
+          <th>LOCATION</th>
+          <th>POINTS</th>
+          <th>WINS</th>
+          <th>DEFEATS</th>
+          <th>DRAWS</th>
+          <th>MATCHES</th>
+          <th>SCORED</th>
+          <th>RECIEVED</th>
+          <th>GOAL-DIFF</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let footballClub of footballClubs">
+          <td>{{footballClub.clubName}}</td>
+          <td>{{footballClub.location}}</td>
+          <td>{{footballClub.points}}</td>
+          <td>{{footballClub.numberOfWins}}</td>
+          <td>{{footballClub.numberOfDefeats}}</td>
+          <td>{{footballClub.numberOfDraws}}</td>
+          <td>{{footballClub.numberOfMatches}}</td>
+          <td>{{footballClub.goalsScored}}</td>
+          <td>{{footballClub.goalsReceived}}</td>
+          <td>{{footballClub.goalDifference}}</td>
+        </tr>
+  </tbody>
+  </table>
+</div>

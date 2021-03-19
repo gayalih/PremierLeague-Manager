@@ -1,0 +1,31 @@
+.bodytext{
+    padding: 7% 11%;
+    width: 35%;
+    height: 50%;
+    text-align: left;
+    justify-content: center;
+}
+p{
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 2px;
+}
+.button{margin: 75px 0 0 0;}
+button{
+    font-size: 120%;
+    color: white;
+    border-radius: 20px;
+    border:1px solid rgba(24, 225, 238, 1);
+    box-shadow:  0px 0px 8px rgba(24, 225, 238, 0.5);
+    width: 42%;
+    height: 50px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    transition: transform .4s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:active{
+   outline: none;
+}

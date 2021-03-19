@@ -1,0 +1,142 @@
+.gendiv{
+    height: 100%;
+    width:45%;
+    margin:4% 5% 0 auto;
+    float: right;
+}
+.formdiv{
+  margin: 4% 0 0 5%;
+  height: 100%;
+  width:45%;
+  float: left;
+}
+button{
+    width: 100%;
+    outline: none;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    border:1px solid rgba(24, 225, 238, 1);
+    box-shadow:  0px 0px 8px rgba(24, 225, 238, 0.5);
+    background-color: transparent;
+    letter-spacing: 1px;
+    box-sizing: none;
+    transition: transform .4s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button.active{
+    outline: none;
+}
+.x{
+    margin: auto;
+    width: 40%;
+}
+.tablediv{
+    margin:3% auto 3% auto;
+    font-family: "Tahoma", sans-serif; 
+    width: 80%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0);
+    transition: transform .3s;
+  }
+  .tablediv:hover{
+    transform: scale(1.03);
+  }
+  .gentable {
+    border-collapse: collapse;
+    overflow: hidden;
+    color: white;
+    width: 100%; 
+    border-radius: 15px;
+    border: none;
+    border-spacing: 0;
+  }
+  .gentd{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    height: 48px;
+    background-color:rgba(255, 255, 255, 0.1)
+  }
+  .app-form-group{
+    letter-spacing: 1px;
+    margin: auto;
+    width:48%
+  }
+  span{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .p{
+    text-align: center;
+  }
+  .line{
+    margin: 0.7% auto 2.4% auto;
+    width: 23%;
+    height: 2px;
+    background-color:rgba(24, 225, 238, 1);
+    box-shadow: 0px 0px 8px rgba(24, 225, 238, 0.5);
+  }
+  .datetable{
+    width: 27%;
+    margin: 0 auto 2.5% auto;
+  }
+  select{
+    border: none;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.3);
+    color: white;
+    height: 30px;
+    width: 90%;
+    z-index: 1;
+    float: right;
+    outline: none;
+  }
+  select.active {
+    outline: none;
+  }
+  option{
+    font-family: tahoma;
+    color: black;
+    background-color:#808080;
+    }
+  .labeltd{
+    width:35%
+  }
+  .seltd{
+    width: 45%;
+  }
+  .datetr{
+   height: 40px;
+  }
+  .star{
+    color: rgba(24, 225, 238, 1);
+    text-shadow: 0 0 10px rgba(24, 225, 238, 0.5);
+    font-size: 16px;
+}
+input{
+  margin-bottom: 8%;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-style: tahoma;
+  padding: 2.5% 0;
+  border-bottom: 1px solid #666;
+  color:rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+.formbutton{
+  width: 32%;
+  margin: 1.5% auto 3% auto;
+}
+.msg{
+  margin: auto;
+  font-size: 15px;
+  color: rgba(24, 225, 238, 1);
+  text-align: center;
+}

@@ -1,0 +1,88 @@
+
+<div class="formdiv">
+    <div class="p">
+        <span>ADD MATCH</span>
+        <div class="line"></div>
+    </div>
+    <div class="dates">
+        <table class="datetable">
+            <tr class="datetr">
+            <td class="labeltd"><label for="day"> DAY </label><span class="star">*</span></td>
+            <td class="seltd"><select id="day" name="day" [(ngModel)]="day">
+                <option selected value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+                <option value="13">13</option><option value="14">14</option><option value="15">15</option>
+                <option value="16">16</option><option value="17">17</option><option value="18">18</option>
+                <option value="19">19</option><option value="20">20</option><option value="21">21</option>
+                <option value="22">22</option><option value="23">23</option><option value="24">24</option>
+                <option value="25">25</option><option value="26">26</option><option value="27">27</option>
+                <option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+              </select>
+            </td>
+            </tr>
+            <tr class="datetr">
+            <td class="labeltd"><label for="month"> MONTH </label><span class="star">*</span></td>
+            <td class="seltd"><select id="month" name="month" [(ngModel)]="month">
+                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+              </select>
+            </td>
+            </tr>
+            <tr class="datetr">
+            <td class="labeltd"><label for="year"> YEAR </label><span class="star">*</span></td>
+            <td class="seltd"><select id="year" name="year" [(ngModel)]="year" >
+                <option selected value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+              </select>
+            </td>
+            </tr>
+        </table>
+    </div>
+    <div class="app-form-group">
+        <label for="homeTeamName"> HOME TEAM <span class="star">*</span> </label>
+        <input oninput="this.value = this.value.toUpperCase()" required type="text" [(ngModel)]="match.homeTeamName" name="homeTeamName" id="homeTeamName"
+                class="app-form-control" maxlength="50" placeholder="Enter Home Team" />
+    </div>
+    <div class="app-form-group">
+        <label for="awayTeamName">AWAY TEAM <span class="star">*</span></label>
+        <input oninput="this.value = this.value.toUpperCase()" required type="text" [(ngModel)]="match.awayTeamName" name="awayTeamName" id="awayTeamName"
+                class="app-form-control" maxlength="50" placeholder="Enter Away Team" />
+    </div>
+        <div class="formbutton"><button class="button" (click)="formMatch()" >ADD MATCH</button></div>
+        <div class="msg"><span class="msg">{{message}}</span></div>
+</div>
+
+
+<div class="gendiv">
+    <div class="x"><button class="button" (click)="addMatch()">RANDOM MATCH</button></div>
+<div class="tablediv">
+    <table class="gentable">
+    <tr style="border-bottom: 1px solid rgb(128, 128, 128,0.3);" *ngFor="let match of matches">
+        <td class="gentd">DATE</td>
+        <td class="gentd"> {{match.stdate}} </td>
+    </tr>
+    <tr style="border-bottom: 1px solid rgb(128, 128, 128,0.3);" *ngFor="let match of matches">
+        <td class="gentd">HOME TEAM</td>
+        <td class="gentd"> {{match.homeTeamName}} </td>
+    </tr>
+    <tr style="border-bottom: 1px solid rgb(128, 128, 128,0.3);" *ngFor="let match of matches">
+        <td class="gentd">HOME GOALS</td>
+        <td class="gentd"> {{match.hgoalsScored}} </td>
+    </tr>
+    <tr style="border-bottom: 1px solid rgb(128, 128, 128,0.3);" *ngFor="let match of matches">
+        <td class="gentd">AWAY TEAM</td>
+        <td class="gentd"> {{match.awayTeamName}} </td>
+    </tr>
+    <tr style="border-bottom: 1px solid rgb(128, 128, 128,0.3);" *ngFor="let match of matches">
+        <td class="gentd">AWAY GOALS</td>
+        <td class="gentd"> {{match.agoalsScored}} </td>
+    </tr>
+</table>
+</div>
+<div class="msg"><span class="msg">{{message2}}</span></div>
+</div>

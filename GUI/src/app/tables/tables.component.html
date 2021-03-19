@@ -1,0 +1,24 @@
+<div class="menu">
+    <div class="p">
+        <span>SORT BY</span>
+        <div class="line"></div>
+    </div>
+    <div class="x"><button class="button" (click)="showPoints()">POINTS</button></div>
+    <div class="x"><button class="button" (click)="showGoals()">GOALS</button></div>
+    <div class="x"><button class="button" (click)="showWins()">WINS</button></div>
+    <div>
+        <div class="p1">
+            <span>DELETE MATCH</span>
+            <div class="line1"></div>
+        </div>
+    <div class="inputdiv"><input oninput="this.value = this.value.toUpperCase()" required type="text" [(ngModel)]="clubName" name="clubName" id="clubName"
+         class="app-form-control" maxlength="50" placeholder="Club Name" /></div>
+     <div class="x1"><button class="button" (click)="deleteMatch()">DELETE</button></div>  
+     <div class="msg"><span class="msgsp">{{message}}</span></div>
+     </div>
+</div>
+
+<div class="routers">
+    <router-outlet ></router-outlet>
+</div>
+<div class="deletediv"></div>

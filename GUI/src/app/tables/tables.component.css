@@ -1,0 +1,86 @@
+.menu{
+    width: 18%;
+    margin: 1.4% 0 0 5.5%;
+    float: left;
+    height:100%;
+}
+.routers{
+    width:71%;
+    margin: 2% 5.5% 0 0;
+    float: right;
+}
+.button{
+    width: 100%;
+    outline: none;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    border:1px solid rgba(24, 225, 238, 1);
+    box-shadow:  0px 0px 8px rgba(24, 225, 238, 0.5);
+    background-color: transparent;
+    letter-spacing: 1px;
+    box-sizing: none;
+    transition: transform .4s;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.button.active{
+    outline: none;
+}
+.x{
+    margin: 0 auto 9% auto;
+    width: 55%;
+}
+.x1{
+    margin: 0 auto 7% auto;
+    width: 65%;
+}
+span{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.p{
+    margin: 10% auto 10% auto;
+    text-align: center;
+}
+.p1{
+    margin: 5% auto 10% auto;
+    text-align: center;
+}
+.line{
+    width: 45%;
+}
+.line1{
+    width: 75%;
+}
+.line, .line1{
+    margin: 1.2% auto 0 auto;
+    height: 2px;
+    background-color:rgba(24, 225, 238, 1);
+    box-shadow: 0px 0px 8px rgba(24, 225, 238, 0.5);
+}
+.inputdiv{
+    width: 65%;
+    margin: auto;
+}
+input{
+    margin-bottom: 15%;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-style: tahoma;
+    padding: 10px 0;
+    border-bottom: 1px solid #666;
+    color:rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+.msg{
+    margin: auto;
+    text-align: center;
+    color: rgba(24, 225, 238, 1);
+}
+.msgsp{
+    font-size: 15px;
+}

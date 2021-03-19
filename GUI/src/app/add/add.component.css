@@ -1,0 +1,93 @@
+.containerform {
+    background: transparent;
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 3.7% 1% 1% 1%;
+    box-sizing: border-box;
+    width: 28%;
+}
+.titlesp{
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+    letter-spacing: 2px;
+}
+.screen {
+    background-color: rgba(0,0,0,0.5);
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0);
+}
+.screen-header {
+    align-items: center;
+    padding: 13px 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.screen-body {
+    align-content: center;
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.formdiv{
+    margin: auto;
+    padding: 30px 40px 20px 40px;
+    letter-spacing: 1px;
+}
+.app-form-group {
+    margin-bottom: 30px;
+}
+.app-form-control{
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color:rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+}
+.buttons {
+   margin-bottom: 20px;
+}
+.app-form-button{
+    width: 120%;
+    height: 30px;
+    color: white;
+    border-radius: 20px;
+    border:1px solid rgba(24, 225, 238, 1);
+    box-shadow:  0px 0px 8px rgba(24, 225, 238, 0.5);
+    background-color: transparent;
+    letter-spacing: 1px;
+    transition: transform .4s;
+    outline: none;
+}
+.app-form-button:hover {
+    transform: scale(1.1);
+}
+.app-form-button:active{
+    outline: none;
+}
+.msg{
+    padding: 3px 0 0 0;
+    float: left;
+    font-size: 14px;
+    color: rgba(24, 225, 238, 1);
+}
+.msg2{
+    font-size: 18px;
+    margin: 4% auto 0 auto;
+    color: rgba(24, 225, 238, 1);
+    text-align: center;
+}
+.sub{float: right;}
+.star{
+    color: rgba(24, 225, 238, 1);
+    text-shadow: 0 0 10px rgba(24, 225, 238, 0.5);
+    font-size: 16px;
+}
